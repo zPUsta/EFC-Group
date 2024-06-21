@@ -284,32 +284,31 @@
         var slideWidth = slides[0].offsetWidth;
         var currentIndex = 0;
     
-        // Slaytları yatay olarak sırala
+      
         slidesContainer.style.width = slideWidth * totalSlides + "px";
     
-        // Sol ve sağ düğmeleri seç
         var prevButton = document.querySelector(".home-blog-slider .prev-button");
         var nextButton = document.querySelector(".home-blog-slider .next-button");
     
-        // Sol düğme için olay dinleyici ekle
+       
         prevButton.addEventListener("click", function() {
             currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
             updateSlidePosition();
         });
     
-        // Sağ düğme için olay dinleyici ekle
+
         nextButton.addEventListener("click", function() {
             currentIndex = (currentIndex + 1) % totalSlides;
             updateSlidePosition();
         });
     
-        // Mevcut slaytı göstermek için pozisyonu güncelle
+
         function updateSlidePosition() {
             var newPosition = -currentIndex * slideWidth;
             slidesContainer.style.transform = "translateX(" + newPosition + "px)";
         }
     
-        // Otomatik oynatma butonu
+
         var centerButton = document.querySelector(".home-blog-slider .center-button");
         var autoPlayInterval;
     
@@ -322,7 +321,7 @@
                 autoPlayInterval = setInterval(function() {
                     currentIndex = (currentIndex + 1) % totalSlides;
                     updateSlidePosition();
-                }, 2000); // 2 saniyede bir slayt geçiş hızı
+                }, 2000); 
                 centerButton.textContent = "Pause";
             }
         });
