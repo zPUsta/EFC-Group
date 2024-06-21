@@ -1,0 +1,354 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+
+:root {
+    --navbar-height: 55px;
+    --card-image-height: 450px;
+    --card-image-width: 372px;
+}
+
+.container {
+    width: 1200px;
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: var(--navbar-height);
+    padding-top: 15px;
+
+}
+
+/* .logo img{
+    width: 128.34px;
+    height: 55px;
+} */
+.nav-menu {
+    width: 689.17px;
+    height: 24px;
+    gap: 50px;
+}
+
+.navbar .nav-menu ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .nav-menu ul li a {
+    color: #fff;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    text-decoration: none;
+    transition: color 0.4s;
+}
+
+.nav-menu ul li a:hover {
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+
+/* .logo{
+    width: 128.34px;
+    height: 55px;
+} */
+
+.btn{
+    cursor: pointer;
+}
+  .btn img {
+    transition: transform 0.3s ease;
+}
+
+.btn:hover img {
+    transform: translateX(8px); 
+}
+.hero-careers {
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('./images/aerial-shot-queensboro-bridge-buildings-new-york-city.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 460px;
+    width: 100%;
+}
+
+.hero-text {
+    width: 1156px;
+    height: 382px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: calc((271px - var(--navbar-height))/2);
+}
+
+.hero-text h1 {
+    font-family: "Playfair Display", serif;
+    color: #FFFFFF;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 95.98px;
+    margin: 0 auto;
+    width: 1156px;
+    height: 96px;
+    text-align: center;
+}
+
+.hero-text p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #FFFFFF;
+    width: 568px;
+    margin: 0 auto;
+    text-align: center;
+}
+.link-text-area{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link-text-area .left, .right{
+    width: 532px;
+}
+
+
+.text-link a{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 25px 15px;
+}
+
+.text-link span{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: rgba(0, 108, 182, 1);
+}
+.text-link-icon{
+    display: flex;
+    align-items: center;
+}
+hr{
+    color: rgba(228, 230, 239, 1);
+    border: 1px solid rgba(228, 230, 239, 1)
+}
+.careers-content h2{
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 63.98px;
+    width: 566px;
+    color: rgba(34, 34, 34, 1);
+}
+
+.careers-content p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 20px 0;
+    width: 568px;
+}
+.careers-content{
+    position: relative;
+    margin: 107px 0;
+}
+
+.position{
+    position: absolute;
+    top: -50px;
+    right: 0;
+}
+
+.link-text-area h5{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21.94px; 
+    color: rgba(34, 34, 34, 1);
+}
+
+
+.b-goal-area{
+    height: 50vh;
+}
+
+.b-goal-area .b-goal-content{
+    width: 100%;
+    height: 233px;
+    background-color: #D6EEFF;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   
+}  
+.b-goal-area .container{
+    position: relative;
+}
+
+.b-goal-area .b-goal-content .b-goal-text{
+    width: 380px;
+    height: 116px;
+}
+.b-goal-area .b-goal-content .b-goal-text h4{
+    font-family: "Playfair Display", serif;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 37.32px;
+    color: #222222;
+}
+
+.b-goal-area .b-goal-content .b-goal-text p{
+    color: rgba(0, 108, 182, 1);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+    padding-top: 16px;
+}
+.b-goal-area #gr-2{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.b-goal-area #gr-1{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.b-goal-content .btn{
+    width: 210px;
+    height: 60px;
+    padding: 16px, 36px, 16px, 36px;
+    background-color: rgba(0, 108, 182, 1);
+    color: rgba(255, 255, 255, 1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.b-goal-content .btn .btn-txt{
+    width: 138px;
+    height: 28px;
+    gap: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.b-goal-content .btn .btn-txt span{
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 19.5px;
+}
+
+footer{
+    background-color: rgba(0, 108, 182, 1);
+    height: 385px;
+    width: 100%;
+}
+
+
+.footer-top {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    color: rgba(255, 255, 255, 1);
+    gap: 50px;
+    padding-top: 50px;
+    }
+
+
+    .footer-top h5{
+        font-family: "Playfair Display", serif;
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 23.99px;
+    }
+    .footer-top p{
+        font-family: "Montserrat", sans-serif;
+        margin: 20px 0px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        color: rgba(255, 255, 255, 1);
+    }
+
+    .div1 { grid-area: 1 / 1 / 2 / 2; }
+    .div2 { grid-area: 1 / 2 / 2 / 3; }
+    .div3 { grid-area: 2 / 2 / 3 / 3; }
+    .div4 { grid-area: 1 / 3 / 3 / 4; }
+    .div5 { grid-area: 1 / 4 / 2 / 5; }
+    
+  
+    .subscribe{
+        display: flex;
+        margin-top: 15px;
+        height: 49px;
+        background-color: rgba(255, 255, 255, 1);
+        border: none;
+    }
+    
+    .subscribe button{
+        background-color: rgba(255, 255, 255, 1);
+        border: none;
+        height: 49px;
+        width: 98px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19.5px;
+        color: rgba(0, 108, 182, 1);
+    }
+        .subscribe input{
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            line-height: 26px;
+            color: rgba(158, 158, 158, 1);
+            font-size: 16px;
+        }
+       #subscribe__email{
+    
+            width: 372px;
+            height: 49px;
+           
+        }
+    .footer-buttom{
+        margin-top: 20px;
+    }
+    
+
+    .footer-text{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-family: "Montserrat", sans-serif;
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 400;
+        color: #FFFFFF;
+    }
+    

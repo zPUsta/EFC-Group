@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <select id="changeLg">
+        <option value="en">English</option>
+        <option value="tr">Türkçe</option>
+        <option value="fr">Français</option>
+    </select>
+    
+</body>
+<script>
+    document.getElementById("changeLg").addEventListener("change", function() {
+        var chooseLg = document.getElementById("changeLg").value; 
+        var lgs = {
+            "en": "Hello",
+            "tr": "Merhaba",
+            "fr": "Bonjour"
+        };
+        
+        for (var lg in lgs) {
+            if (lg === chooseLg ) {
+                console.log(lgs[lg]);
+                break; 
+            }
+        }
+    });
+    
+    
+    
+    
+</script>
+</html>
